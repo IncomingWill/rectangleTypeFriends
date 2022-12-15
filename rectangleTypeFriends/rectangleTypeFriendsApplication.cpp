@@ -14,33 +14,33 @@ P. 997, Challenge 2, rectangleType Program, Week 5
 using namespace std;
 
 //Function Prototypes
-void welcomeUser();															//Function to welcome user
-char inputValidation(char&);												//Function for input validation
+void welcomeUser();										//Function to welcome user
+char inputValidation(char&);									//Function for input validation
 
 
 int main()
 {
-	char runAgain = 'Y';													//initialize variable to run program again, default to yes to start
+	char runAgain = 'Y';									//initialize variable to run program again, default to yes to start
 
-	welcomeUser();															//call introduction function
+	welcomeUser();										//call introduction function
 
-	while (toupper(runAgain) == 'Y')										//while 'Y', run program, else quits
+	while (toupper(runAgain) == 'Y')							//while 'Y', run program, else quits
 
 	{
-		rectangleType myRec(12, 20);										//initialize internal clock
-		rectangleType yourRec;												//initialize user rectangle at default values
-		rectangleType ourRec;												//initialize default rectangle to save operations to
+		rectangleType myRec(12, 20);							//initialize internal clock
+		rectangleType yourRec;								//initialize user rectangle at default values
+		rectangleType ourRec;								//initialize default rectangle to save operations to
 
 		cout << "My rectangle:\n" << myRec << endl;
 		cout << "Your initial rectangle: " << yourRec << endl;
 
 		cout << "Please enter dimensions:\n";
 		//cout << "You will enter length and width: ";
-		//cin >> yourRec;													//honestly I don't love this because
-																			//validating for negative input is a pain 
+		//cin >> yourRec;								//honestly I don't love this because
+												//validating for negative input is a pain 
 																			 
 //to test cin >> yourRec, comment this section vv
-		double myRecLength;													//initialize variable to assign to length and width
+		double myRecLength;								//initialize variable to assign to length and width
 		double myRecWidth;
 
 		cout << "length: ";
@@ -142,7 +142,7 @@ int main()
 
 		cout << endl;
 
-		runAgain = inputValidation(runAgain);    							//user Validation of 'Y' or 'N'
+		runAgain = inputValidation(runAgain);    					//user Validation of 'Y' or 'N'
 	}
 
 	cout << "Thank you for running the program.";
